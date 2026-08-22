@@ -1,64 +1,28 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Easy Food — fresh food, simple ordering and easy delivery.">
-<title>Easy Food — Fresh & Easy</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Easy Food — fresh meals, easy ordering and convenient delivery.">
+<meta name="theme-color" content="#0f8a5f">
+<title>Easy Food | Fresh Meals, Easy Ordering</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="logo" href="#home"><span>🍽️</span> Easy <b>Food</b></a>
-    <nav id="nav">
-      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a>
-    </nav>
-    <button class="cart-button" id="cartButton">🛒 Cart <span id="cartCount">0</span></button>
-    <button class="mobile-menu" id="mobileMenu">☰</button>
-  </div>
-</header>
-
+<header class="header"><div class="container nav">
+<a class="brand" href="#home" aria-label="Easy Food home"><span class="brand-mark">EF</span><span>Easy <b>Food</b></span></a>
+<nav id="nav"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#why">Why Us</a><a href="#how">How It Works</a><a href="#contact">Contact</a></nav>
+<div class="nav-actions"><a class="phone" href="tel:+923702283429">0370 2283429</a><button class="cart-button" id="cartButton">Cart <span id="cartCount">0</span></button><button class="mobile-menu" id="mobileMenu">☰</button></div>
+</div></header>
 <main>
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="tag">FRESH • FAST • EASY</div>
-      <h1>Your favourite food,<br><em>made easy.</em></h1>
-      <p>Discover delicious meals, choose what you love and place your order in just a few clicks.</p>
-      <div class="hero-actions"><a class="primary" href="#menu">Explore Menu</a><a class="secondary" href="#about">Learn More</a></div>
-    </div>
-    <div class="hero-art"><div class="plate">🍔</div><div class="floating one">🍟</div><div class="floating two">🥤</div><div class="hero-note"><strong>Fresh & delicious</strong><span>Prepared with care</span></div></div>
-  </div>
-</section>
-
-<section class="section" id="menu">
-  <div class="container">
-    <div class="heading"><span>OUR MENU</span><h2>Choose your favourite</h2><p>Simple menu, clear prices and an easy cart.</p></div>
-    <div class="menu-grid" id="menuGrid"></div>
-  </div>
-</section>
-
-<section class="section light" id="about">
-  <div class="container about-grid">
-    <div class="about-card"><div class="big-icon">🥘</div></div>
-    <div><div class="heading left"><span>ABOUT EASY FOOD</span><h2>Good food without the complication.</h2></div><p>Easy Food is built around a simple idea: make ordering food straightforward. Browse the menu, add items to your cart and review your order before confirming.</p><div class="features"><div>✓ Simple ordering</div><div>✓ Clear pricing</div><div>✓ Mobile friendly</div><div>✓ Easy cart management</div></div></div>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <div class="container contact-box"><div><div class="heading left"><span>CONTACT</span><h2>Ready to order?</h2></div><p>Use the cart to prepare your order. Delivery and payment details can be confirmed with the Easy Food team.</p></div><button class="primary" id="contactButton">Open Cart</button></div>
-</section>
+<section class="hero" id="home"><div class="container hero-grid"><div class="hero-copy"><span class="eyebrow">FRESH • FAST • EASY</span><h1>Food you love,<br><span>made effortless.</span></h1><p>Browse our menu, build your order and enjoy a simple food experience from start to finish.</p><div class="hero-actions"><a class="primary" href="#menu">Explore Menu <span>→</span></a><a class="secondary" href="#how">How it works</a></div><div class="trust"><span>✓ Freshly prepared</span><span>✓ Clear pricing</span><span>✓ Easy ordering</span></div></div><div class="hero-visual"><div class="glow"></div><div class="hero-dish">🍔</div><div class="food-float f1">🍟</div><div class="food-float f2">🥤</div><div class="rating"><strong>4.9</strong><span>★★★★★</span><small>Loved by foodies</small></div></div></div></section>
+<section class="categories"><div class="container category-row"><button class="category active" data-filter="all">All</button><button class="category" data-filter="main">Meals</button><button class="category" data-filter="fast">Fast Food</button><button class="category" data-filter="side">Sides</button><button class="category" data-filter="drink">Drinks</button></div></section>
+<section class="section" id="menu"><div class="container"><div class="section-head"><div><span class="eyebrow">OUR MENU</span><h2>Pick something delicious</h2></div><p>Fresh favourites with straightforward prices.</p></div><div class="menu-grid" id="menuGrid"></div></div></section>
+<section class="section soft" id="why"><div class="container"><div class="center-head"><span class="eyebrow">WHY EASY FOOD</span><h2>Everything simple. Nothing confusing.</h2></div><div class="benefits"><article><div class="benefit-icon">🥗</div><h3>Fresh choices</h3><p>Simple meals and snacks selected for an easy ordering experience.</p></article><article><div class="benefit-icon">⚡</div><h3>Quick ordering</h3><p>Build your cart in seconds with clear items, quantities and prices.</p></article><article><div class="benefit-icon">💳</div><h3>Easy payment</h3><p>Use EasyPaisa or JazzCash and keep your payment details organised.</p></article><article><div class="benefit-icon">📱</div><h3>Mobile friendly</h3><p>A clean experience designed to work smoothly on phones and computers.</p></article></div></div></section>
+<section class="section" id="how"><div class="container"><div class="section-head"><div><span class="eyebrow">HOW IT WORKS</span><h2>Order in three steps</h2></div></div><div class="steps"><article><span>01</span><h3>Choose</h3><p>Pick your favourite items from the menu.</p></article><article><span>02</span><h3>Review</h3><p>Check your cart, quantities and total.</p></article><article><span>03</span><h3>Confirm</h3><p>Enter your details and confirm your order.</p></article></div></div></section>
+<section class="payment"><div class="container payment-inner"><div><span class="eyebrow">EASY PAYMENT</span><h2>Pay the simple way.</h2><p>EasyPaisa and JazzCash payments are supported. Your order screen will show the payment instructions clearly.</p></div><div class="payment-card"><div class="pay-icon">₨</div><div><strong>EasyPaisa / JazzCash</strong><span>03702283429</span></div><button id="copyPayment">Copy</button></div></div></section>
+<section class="section contact-section" id="contact"><div class="container contact-box"><div><span class="eyebrow">READY WHEN YOU ARE</span><h2>Let's get your order started.</h2><p>Add your favourites to the cart and continue when you're ready.</p></div><button class="primary" id="contactButton">Open Cart →</button></div></section>
 </main>
-
-<footer><div class="container footer"><strong>Easy Food</strong><span>Fresh food • Easy ordering</span><span>© <span id="year"></span> Easy Food</span></div></footer>
-
-<div class="backdrop" id="backdrop"></div>
-<aside class="cart" id="cart" aria-label="Shopping cart">
-  <div class="cart-top"><h2>Your Order</h2><button id="closeCart">×</button></div>
-  <div class="cart-list" id="cartList"></div>
-  <div class="cart-bottom"><div><span>Total</span><strong id="cartTotal">Rs 0</strong></div><button class="primary full" id="checkout">Continue Order</button></div>
-</aside>
-<script src="app.js"></script>
-</body>
-</html>
+<footer><div class="container footer"><div class="footer-brand"><span class="brand-mark">EF</span><strong>Easy Food</strong></div><span>Fresh meals • Easy ordering</span><span>© <span id="year"></span> Easy Food</span></div></footer>
+<div class="backdrop" id="backdrop"></div><aside class="cart" id="cart" aria-label="Shopping cart"><div class="cart-top"><div><span class="eyebrow">YOUR ORDER</span><h2>Shopping Cart</h2></div><button id="closeCart">×</button></div><div class="cart-list" id="cartList"></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="cartTotal">Rs 0</strong></div><button class="primary full" id="checkout">Continue to Order →</button></div></aside>
+<div class="toast" id="toast"></div><script src="app.js"></script>
+</body></html>
