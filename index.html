@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Easy Food — fresh food, simple ordering and easy delivery.">
+<title>Easy Food — Fresh & Easy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="#home"><span>🍽️</span> Easy <b>Food</b></a>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartButton">🛒 Cart <span id="cartCount">0</span></button>
+    <button class="mobile-menu" id="mobileMenu">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="tag">FRESH • FAST • EASY</div>
+      <h1>Your favourite food,<br><em>made easy.</em></h1>
+      <p>Discover delicious meals, choose what you love and place your order in just a few clicks.</p>
+      <div class="hero-actions"><a class="primary" href="#menu">Explore Menu</a><a class="secondary" href="#about">Learn More</a></div>
+    </div>
+    <div class="hero-art"><div class="plate">🍔</div><div class="floating one">🍟</div><div class="floating two">🥤</div><div class="hero-note"><strong>Fresh & delicious</strong><span>Prepared with care</span></div></div>
+  </div>
+</section>
+
+<section class="section" id="menu">
+  <div class="container">
+    <div class="heading"><span>OUR MENU</span><h2>Choose your favourite</h2><p>Simple menu, clear prices and an easy cart.</p></div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<section class="section light" id="about">
+  <div class="container about-grid">
+    <div class="about-card"><div class="big-icon">🥘</div></div>
+    <div><div class="heading left"><span>ABOUT EASY FOOD</span><h2>Good food without the complication.</h2></div><p>Easy Food is built around a simple idea: make ordering food straightforward. Browse the menu, add items to your cart and review your order before confirming.</p><div class="features"><div>✓ Simple ordering</div><div>✓ Clear pricing</div><div>✓ Mobile friendly</div><div>✓ Easy cart management</div></div></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container contact-box"><div><div class="heading left"><span>CONTACT</span><h2>Ready to order?</h2></div><p>Use the cart to prepare your order. Delivery and payment details can be confirmed with the Easy Food team.</p></div><button class="primary" id="contactButton">Open Cart</button></div>
+</section>
+</main>
+
+<footer><div class="container footer"><strong>Easy Food</strong><span>Fresh food • Easy ordering</span><span>© <span id="year"></span> Easy Food</span></div></footer>
+
+<div class="backdrop" id="backdrop"></div>
+<aside class="cart" id="cart" aria-label="Shopping cart">
+  <div class="cart-top"><h2>Your Order</h2><button id="closeCart">×</button></div>
+  <div class="cart-list" id="cartList"></div>
+  <div class="cart-bottom"><div><span>Total</span><strong id="cartTotal">Rs 0</strong></div><button class="primary full" id="checkout">Continue Order</button></div>
+</aside>
+<script src="app.js"></script>
+</body>
+</html>
